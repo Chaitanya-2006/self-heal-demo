@@ -1,0 +1,45 @@
+name: Sync Bright Data Scraper Events
+
+on:
+  # Run every 6 hours
+  schedule:
+    - cron: "0 */6 * * *"
+
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      collector_id:
+        description: "Bright Data Collector ID (optional, defaults to secret or c_mt4lfnc3t1j68gvcu)"
+        required: false
+        default: "c_mt4lfnc3t1j68gvcu"
+
+jobs:
+  sync-events:
+    name: Trigger Scraper & Sync Events
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
+          cache-dependency-path: pipeline/package-lock.json
+
+      - name: Install Dependencies
+        working-directory: ./pipeline
+        run: npm ci
+
+      - name: Run Pipeline Sync
+        working-directory: ./pipeline
+        env:
+          BRIGHT_DATA_TOKEN: ${{ secrets.BRIGHT_DATA_TOKEN }}
+          BRIGHTDATA_API_KEY: ${{ secrets.BRIGHT_DATA_TOKEN }}
+          BRIGHTDATA_COLLECTOR_ID: ${{ inputs.collector_id || secrets.COLLECTOR_ID || 'c_mt4lfnc3t1j68gvcu' }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          node sync.js "${{ inputs.collector_id || secrets.COLLECTOR_ID || 'c_mt4lfnc3t1j68gvcu' }}"

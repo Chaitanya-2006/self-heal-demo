@@ -1,0 +1,132 @@
+[
+  {
+    "event_name": "All Star Standup Comedy",
+    "event_date": "Daily",
+    "event_time": "10:00 PM",
+    "ticket_link": "https://in.bookmyshow.com/events/all-star-standup-comedy/ET00327409",
+    "venue_name": "The Habitat, Mumbai",
+    "input": {
+      "url": "https://indiehabitat.com/"
+    }
+  },
+  {
+    "event_name": "Last Comedy Show in the City",
+    "event_date": "Daily",
+    "event_time": "12:00 AM",
+    "ticket_link": "https://in.bookmyshow.com/events/last-comedy-show-in-the-city/ET00336827",
+    "venue_name": "The Habitat, Mumbai",
+    "input": {
+      "url": "https://indiehabitat.com/"
+    }
+  },
+  {
+    "event_name": "Mass Bunk Stand Up Comedy",
+    "event_date": "Every Fri, Sat & Sun",
+    "event_time": "FRI 6:00pm / SAT-SUN 4:00pm",
+    "ticket_link": "https://in.bookmyshow.com/events/mass-bunk-stand-up-comedy/ET00365779",
+    "venue_name": "The Habitat, Mumbai",
+    "input": {
+      "url": "https://indiehabitat.com/"
+    }
+  },
+  {
+    "event_name": "Comedy Roulette",
+    "event_date": "Every Thu & Fri",
+    "event_time": "8:00 PM",
+    "ticket_link": "https://in.bookmyshow.com/events/comedy-roulette/ET00308527",
+    "venue_name": "The Habitat, Mumbai",
+    "input": {
+      "url": "https://indiehabitat.com/"
+    }
+  },
+  {
+    "event_name": "Poetry Open Mic",
+    "event_date": "Sunday & Monday",
+    "event_time": "Sun 2pm / Mon 8pm",
+    "ticket_link": "https://in.bookmyshow.com/venue/the-habitat-mumbai/TFST",
+    "venue_name": "The Habitat, Mumbai",
+    "input": {
+      "url": "https://indiehabitat.com/"
+    }
+  },
+  {
+    "event_name": "Comedy Open Mic",
+    "event_date": "Every Monday",
+    "event_time": "7pm & 9pm",
+    "ticket_link": "https://in.bookmyshow.com/venue/the-habitat-mumbai/TFST",
+    "venue_name": "The Habitat, Mumbai",
+    "input": {
+      "url": "https://indiehabitat.com/"
+    }
+  },
+  {
+    "event_name": "Abba Tribute Show",
+    "event_date": "Sun, 06-Sep-2026",
+    "event_time": "6:30 PM",
+    "ticket_link": "https://in.bookmyshow.com/plays/abba-tribute-show/ET00107138",
+    "venue_name": "Royal Opera House Mumbai",
+    "input": {
+      "url": "https://www.royaloperahouse.in/upcoming-shows/"
+    }
+  },
+  {
+    "event_name": "Tom-Jerry",
+    "event_date": "Sun, 29-Nov-2026",
+    "event_time": "7 PM",
+    "ticket_link": "https://in.bookmyshow.com/plays/tom-jerry/ET00505603/seatscanvas/ROHM/11367",
+    "venue_name": "Royal Opera House Mumbai",
+    "input": {
+      "url": "https://www.royaloperahouse.in/upcoming-shows/"
+    }
+  },
+  {
+    "event_name": "The Wizard Of OZ",
+    "event_date": "Sun, 23-Aug-2026",
+    "event_time": "11 : 30 AM",
+    "ticket_link": "https://in.bookmyshow.com/plays/the-wizard-of-oz/ET00502247",
+    "venue_name": "Royal Opera House Mumbai",
+    "input": {
+      "url": "https://www.royaloperahouse.in/upcoming-shows/"
+    }
+  },
+  {
+    "event_name": "The Wizard Of OZ",
+    "event_date": "Sun, 23-Aug-2026",
+    "event_time": "4 : 30 PM",
+    "ticket_link": "https://in.bookmyshow.com/plays/the-wizard-of-oz/ET00502247",
+    "venue_name": "Royal Opera House Mumbai",
+    "input": {
+      "url": "https://www.royaloperahouse.in/upcoming-shows/"
+    }
+  },
+  {
+    "event_name": "The Gujarati Project",
+    "event_date": "Sat, 26-Sep-2026",
+    "event_time": "7 PM",
+    "ticket_link": "https://in.bookmyshow.com/events/the-gujarati-project/ET00512197",
+    "venue_name": "Royal Opera House Mumbai",
+    "input": {
+      "url": "https://www.royaloperahouse.in/upcoming-shows/"
+    }
+  },
+  {
+    "event_name": "Rebel Ranis",
+    "event_date": "Sun, 27-Sep-2026",
+    "event_time": "7 PM",
+    "ticket_link": "https://in.bookmyshow.com/plays/rebel-ranis/ET00512267",
+    "venue_name": "Royal Opera House Mumbai",
+    "input": {
+      "url": "https://www.royaloperahouse.in/upcoming-shows/"
+    }
+  },
+  {
+    "event_name": "Gauhar",
+    "event_date": "Sun, 11-Oct-2026",
+    "event_time": "7:30 PM",
+    "ticket_link": "https://in.bookmyshow.com/plays/gauhar/ET00374622",
+    "venue_name": "Royal Opera House Mumbai",
+    "input": {
+      "url": "https://www.royaloperahouse.in/upcoming-shows/"
+    }
+  }
+]

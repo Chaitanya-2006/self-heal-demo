@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandra Underground Live - Events</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card-bg: #181b24;
+      --card-border: #262b3a;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #ff5c77;
+      --accent-hover: #ff7b92;
+      --badge-bg: #212638;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0 1rem;
+    }
+
+    header {
+      max-width: 800px;
+      margin: 3rem auto 2rem auto;
+      text-align: center;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto 4rem auto;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .events-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .event-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .event-card:hover {
+      transform: translateY(-2px);
+      border-color: #3b4258;
+    }
+
+    .event-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .event-date {
+      display: inline-block;
+      background-color: var(--badge-bg);
+      color: #58a6ff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.3rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid rgba(88, 166, 255, 0.2);
+    }
+
+    .event-name {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .event-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .event-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.5rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .event-time {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .ticket-link {
+      display: inline-block;
+      background-color: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.5rem 1.2rem;
+      border-radius: 6px;
+      transition: background-color 0.15s ease;
+    }
+
+    .ticket-link:hover {
+      background-color: var(--accent-hover);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--card-border);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Bandra Underground Live</h1>
+    <p>14th Road, Off Linking Road, Bandra West, Mumbai 400050</p>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Upcoming Live Shows</h2>
+
+    <div class="events-grid">
+
+      <!-- Event 1 -->
+      <article class="event-card">
+        <div class="event-meta">
+          <div class="wrapper"><span class="event-date">Friday, 28 August 2026</span></div>
+        </div>
+        <h3 class="event-name">Acoustic Sunset Sessions feat. Dhruv & Friends</h3>
+        <p class="event-desc">An intimate acoustic showcase featuring indie originals, classic singer-songwriter tunes,
+          and ambient guitar loops in our cellar room.</p>
+        <div class="event-footer">
+          <span class="event-time">Doors open: 8:00 PM</span>
+          <a class="ticket-link" href="https://in.bookmyshow.com/events/acoustic-sunset-sessions/ET00123401">Book
+            Tickets (&#8377;400)</a>
+        </div>
+      </article>
+
+      <!-- Event 2 -->
+      <article class="event-card">
+        <div class="event-meta">
+          <div class="wrapper"><span class="event-date">Saturday, 29 August 2026</span></div>
+        </div>
+        <h3 class="event-name">Midnight Improv & Standup Comedy Hour</h3>
+        <p class="event-desc">Unfiltered, unscripted late-night comedy featuring 5 of Mumbai's finest circuit headliners
+          and experimental open spot previews.</p>
+        <div class="event-footer">
+          <span class="event-time">Doors open: 10:30 PM</span>
+          <a class="ticket-link" href="https://in.bookmyshow.com/events/midnight-improv-comedy/ET00123402">Book Tickets
+            (&#8377;350)</a>
+        </div>
+      </article>
+
+      <!-- Event 3 -->
+      <article class="event-card">
+        <div class="event-meta">
+          <div class="wrapper"><span class="event-date">Sunday, 30 August 2026</span></div>
+        </div>
+        <h3 class="event-name">Bombay Spoken Word & Poetry Slam Vol. 7</h3>
+        <p class="event-desc">Our flagship monthly open poetry gathering. Bring your verses, Hindi/Urdu nazms, or
+          English storytelling for a supportive room.</p>
+        <div class="event-footer">
+          <span class="event-time">Doors open: 6:30 PM</span>
+          <a class="ticket-link" href="https://in.bookmyshow.com/events/bombay-spoken-word-vol-7/ET00123403">Book
+            Tickets (&#8377;250)</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bandra Underground Live &bull; Venue Capacity: 75 Seated</p>
+  </footer>
+
+</body>
+
+</html>
