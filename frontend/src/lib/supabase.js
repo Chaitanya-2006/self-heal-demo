@@ -8,10 +8,11 @@ import { createClient } from "@supabase/supabase-js";
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  console.error(
-    "EXTRACTLY: Missing VITE_SUPABASE_URL or VITE_SUPABASE_ANON_KEY in .env"
-  );
-}
-
-export const supabase = createClient(supabaseUrl || "", supabaseAnonKey || "");
+// Guard: createClient throws a hard error when given empty strings,
+// which crashes the entire React tree and produces a blank page.
+// When env vars are missing (e.g. Vercel before they are configured),
+// export null and let App.jsx fall back to local fake-events data.
+export const supabase =
+  supabaseUrl && supabaseAnonKey
+    ? createClient(supabaseUrl, supabaseAnonKey)
+    : null;

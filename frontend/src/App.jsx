@@ -27,6 +27,11 @@ export default function App() {
     let ignore = false;
 
     async function loadData() {
+      if (!supabase) {
+        // No Supabase client (env vars missing) — keep fallback data, don't crash
+        console.warn("EXTRACTLY: Supabase not configured — using local fallback data.");
+        return;
+      }
       try {
         const { data, error: dbError } = await supabase
           .from("events")
@@ -59,6 +64,10 @@ export default function App() {
   }, []);
 
   const handleRefresh = async () => {
+    if (!supabase) {
+      console.warn("EXTRACTLY: Supabase not configured — using local fallback data.");
+      return;
+    }
     setLoading(true);
     setError(null);
     try {
